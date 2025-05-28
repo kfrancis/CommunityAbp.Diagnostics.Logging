@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "CommunityAbp.Diagnostics.Logging": {
+      "path": "src/CommunityAbp.Diagnostics.Logging/CommunityAbp.Diagnostics.Logging.abppkg",
+      "folder": "src"
+    }
+  }
+}

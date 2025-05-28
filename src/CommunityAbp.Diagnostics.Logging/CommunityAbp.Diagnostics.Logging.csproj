@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <WarningsNotAsErrors>CS1591</WarningsNotAsErrors>
+    <PackageId>CommunityAbp.Diagnostics.Logging</PackageId>
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <Version>1.0.0</Version>
+    <Authors>Kori Francis</Authors>
+    <Company>Clinical Support Systems</Company>
+    <Description>Diagnostic logging interceptor for ABP.io application services with selective attribute-based monitoring and retry pattern detection.</Description>
+    <PackageTags>abp;diagnostics;logging;interceptor;monitoring;retry;applicationservice</PackageTags>
+    <PackageProjectUrl>https://github.com/kfrancis/CommunityAbp.Diagnostics.Logging</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kfrancis/CommunityAbp.Diagnostics.Logging</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+      v1.0.0:
+      - Initial release
+      - Attribute-based selective logging
+      - Correlation tracking across service layers
+      - Retry pattern detection capabilities
+      - Support for ABP.io 8.x and 9.x
+    </PackageReleaseNotes>
+
+    <!-- Build Configuration -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+    <MinVerSkip>false</MinVerSkip>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MinVer" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Volo.Abp.Core" Version="9.1.*" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="9.1.*" />
+  </ItemGroup>
+
+</Project>

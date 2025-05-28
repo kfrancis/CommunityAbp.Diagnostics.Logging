@@ -1,0 +1,9 @@
+{
+  "id": "869bb799-4089-4e54-a086-bd47374ce263",
+  "template": "empty",
+  "modules": {
+    "CommunityAbp.Diagnostics.Logging": {
+      "path": "CommunityAbp.Diagnostics.Logging.abpmdl"
+    }
+  }
+}

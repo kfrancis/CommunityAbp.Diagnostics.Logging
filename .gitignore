@@ -705,3 +705,17 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,osx,visualstudio,visualstudiocode,rider,android,androidstudio,dotnetcore
+
+
+# ABP Studio
+**/.abpstudio/
+
+# Sample
+CommunityAbp.Diagnostics.Logging.Sample/Logs/*
+
+*.db
+*.db-shm
+*.db-wal
+
+# Use abp install-libs to restore.
+**/wwwroot/libs/*

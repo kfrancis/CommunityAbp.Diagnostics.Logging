@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "name": "my-app",
+  "private": true,
+  "dependencies": {
+    "@volo/account": "~9.1.1",
+    "@volo/identity": "~9.1.1",
+    "@abp/aspnetcore.mvc.ui.theme.basic": "~9.1.1"
+  }
+}
